@@ -1,7 +1,17 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Nathanael Jonathan | Digital Transformation Project Manager">
+<meta property="og:description" content="Digital transformation project manager and IT business analyst with 8+ years in IT across banking, IT services and coal mining.">
+<meta property="og:type" content="website">
+<style>
+:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+</style>
 <title>Nathanael Jonathan Portfolio</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Nathanael Jonathan, IT Business Analyst & Project Manager based in Jakarta.">
+<meta name="description" content="Nathanael Jonathan, Digital Transformation Project Manager and IT Business Analyst based in Jakarta.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600;700&display=swap">
@@ -114,7 +124,7 @@ section{padding-block:88px}
 .tag i{width:7px;height:7px;border-radius:50%;background:var(--teal)}
 .stop.now .tag i{background:var(--accent);animation:ping 1.6s infinite}
 @keyframes ping{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 60%,transparent)}100%{box-shadow:0 0 0 8px transparent}}
-.years{font-family:var(--f-display);font-weight:800;font-variation-settings:"wdth" 115;font-size:1.5rem}
+.years{font-family:var(--f-display);font-weight:800;font-variation-settings:"wdth" 115;font-size:1.3rem;line-height:1.15}
 .company{color:var(--muted);font-size:.95rem}
 .stop h3{margin-bottom:6px}
 .stop .co{font-weight:600;color:var(--teal);margin-bottom:14px}
@@ -124,9 +134,17 @@ section{padding-block:88px}
 @media (max-width:720px){.road{padding-left:44px}.stop{grid-template-columns:1fr;gap:10px}.stop::before{left:-36px}.road svg.track{left:-6px}.truck{left:2px}}
 
 /* projects */
-.projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-@media (max-width:960px){.projects{grid-template-columns:1fr}}
-.proj{background:var(--surface);border:1px solid var(--line);padding:24px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px;min-width:0;transition:transform .25s,border-color .25s}
+.projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:760px){.projects{grid-template-columns:1fr}}
+.v4 svg{position:absolute;inset:0;width:100%;height:100%}
+.v4 .fo{fill:none;stroke:var(--line);stroke-width:3;vector-effect:non-scaling-stroke}
+.v4 .fo-pulse{fill:none;stroke:var(--accent);stroke-width:3;vector-effect:non-scaling-stroke;stroke-dasharray:40 400;animation:fo 3.2s linear infinite}
+@keyframes fo{from{stroke-dashoffset:440}to{stroke-dashoffset:0}}
+.v4 .tw{position:absolute;width:0;height:0;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:30px solid var(--teal)}
+.v4 .read{position:absolute;bottom:8px;right:10px;font-family:var(--f-mono);font-size:.65rem;color:var(--teal)}
+.stat .n.sm{font-size:clamp(1.25rem,2.6vw,1.9rem)}
+.tools{margin-top:36px;display:grid;gap:14px}
+.proj{background:var(--surface);border:1px solid var(--line);padding:24px;display:grid;grid-template-rows:auto auto auto 1fr auto;gap:14px;align-content:start;min-width:0;transition:transform .25s,border-color .25s}
 .proj:hover{transform:translateY(-4px);border-color:var(--teal)}
 .viz{height:120px;border:1px solid var(--line);background:var(--bg);position:relative;overflow:hidden}
 .proj .meta{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
@@ -141,7 +159,7 @@ section{padding-block:88px}
 /* viz 2: rfid */
 .v2 .lane{position:absolute;left:0;right:0;top:50%;height:22px;transform:translateY(-50%);border-top:1px dashed var(--line);border-bottom:1px dashed var(--line)}
 .v2 .gate{position:absolute;top:18px;bottom:18px;width:2px;background:var(--teal)}
-.v2 .gate::after{content:attr(data-id);position:absolute;top:-2px;left:6px;font-family:var(--f-mono);font-size:.62rem;color:var(--muted)}
+.v2 .gate::after{content:attr(data-id);white-space:nowrap;position:absolute;top:-2px;left:6px;font-family:var(--f-mono);font-size:.62rem;color:var(--muted)}
 .v2 .hauler{position:absolute;top:50%;left:-30px;width:24px;height:12px;background:var(--accent);transform:translateY(-50%);animation:haul 5s linear infinite}
 .v2 .read{position:absolute;bottom:8px;left:10px;font-family:var(--f-mono);font-size:.65rem;color:var(--teal)}
 @keyframes haul{to{left:calc(100% + 30px)}}
@@ -200,6 +218,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 @keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .rv.wait{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
+</head>
+<body>
 
 <nav class="nav" aria-label="Sections">
   <div class="wrap">
@@ -218,23 +238,23 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
 <header class="hero" id="top">
   <canvas id="topo" aria-hidden="true"></canvas>
-  <div class="mono coord" aria-hidden="true">JAKARTA HQ · 6.2°S 106.8°E<br>+ MINE SITE OPERATIONS</div>
+  <div class="mono coord" aria-hidden="true">JAKARTA HQ · 6.2°S 106.8°E<br>+ CENTRAL KALIMANTAN MINE SITE</div>
   <div class="wrap">
     <div style="display:grid;gap:22px">
       <p class="eyebrow ld">Portfolio · 2026</p>
       <h1 class="ld">Nathanael<span>Jonathan</span></h1>
-      <p class="role ld">IT Business Analyst <b></b> Project Manager</p>
-      <p class="lede ld">I turn messy, manual operations into systems people actually use. For the past four years I have done that inside a <strong>coal mining company</strong>, from Jakarta head office to the mine site: writing the requirements, managing the vendors, and staying until adoption is real.</p>
+      <p class="role ld">Digital Transformation Project Manager <b></b> IT Business Analyst</p>
+      <p class="lede ld">I run technology projects at a <strong>coal mining company</strong>, from the business problem through requirements, vendor selection, SIT/UAT and go-live. I keep supporting users after launch, until the system is part of their daily work.</p>
       <div class="cta ld">
         <a class="btn primary" href="#projects">See key projects</a>
         <a class="btn" href="#contact">Get in touch</a>
       </div>
     </div>
     <div class="stats ld" role="list">
-      <div class="stat" role="listitem"><div class="n"><span data-count="7">7</span><em>+</em></div><div class="l">years across banking IT, IT services and mining</div></div>
+      <div class="stat" role="listitem"><div class="n"><span data-count="8">8</span><em>+</em></div><div class="l">years in IT across banking, IT services and coal mining</div></div>
       <div class="stat" role="listitem"><div class="n"><span data-count="10">10</span><em>+</em></div><div class="l">enterprise system implementations led</div></div>
-      <div class="stat" role="listitem"><div class="n"><em>~</em><span data-count="60">60</span><em>%</em></div><div class="l">less manual processing after digitalization</div></div>
-      <div class="stat" role="listitem"><div class="n"><span data-count="99">99</span><em>%+</em></div><div class="l">data accuracy on unified platforms</div></div>
+      <div class="stat" role="listitem"><div class="n">100<em>–</em>200</div><div class="l">users on the largest system I implemented</div></div>
+      <div class="stat" role="listitem"><div class="n sm"><em>IDR</em> 50<em>–</em>100<em>bn</em></div><div class="l">tower and fiber optic network build I coordinate</div></div>
     </div>
   </div>
 </header>
@@ -245,15 +265,16 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     <div class="about-text rv">
       <p class="eyebrow" style="margin-bottom:14px">About</p>
       <h2 style="margin-bottom:24px">Between the business and the build.</h2>
-      <p>I started as a developer on an internet banking platform, moved into business intelligence and analysis, and now run projects end to end as both BA and PM. Having written code and built dashboards myself makes it easier to sit with operations teams on one side and developers or vendors on the other, and keep both pointed at the same outcome.</p>
-      <p>Most of my current work replaces spreadsheets and paper logs with platforms that hold up on a mine site: compliance, asset management, hauling and project tracking. A rollout is not done at go-live for me. It is done when every target unit is using it, which on my projects has typically meant within two months.</p>
+      <p>I have spent 8+ years in IT, starting as a developer on an internet banking platform, then moving into business intelligence and analysis. At PT Alamtri Minerals Indonesia I report directly to the Head of IT and manage technology builds such as command centres and RFID fleet tracking. I am also project coordinator on a tower and fiber optic network for the mine site, valued at IDR 50 to 100 billion.</p>
+      <p>I lead cross-functional teams without direct authority, often with members more senior than me, and report progress and risks to the Board of Directors. A project only closes for me when people are actually using the system, not on the go-live date.</p>
     </div>
     <dl class="facts rv">
       <div><dt>Current</dt><dd>IT Business Analyst &amp; Project Manager, PT Alamtri Minerals Indonesia</dd></div>
+      <div><dt>Reports to</dt><dd>Head of IT</dd></div>
       <div><dt>Based in</dt><dd>Jakarta, Indonesia</dd></div>
-      <div><dt>Industries</dt><dd>Mining · Banking &amp; finance · IT services</dd></div>
-      <div><dt>Education</dt><dd>Informatics Engineering, Jenderal Soedirman University</dd></div>
-      <div><dt>Languages</dt><dd>Indonesian (native) · English (professional)</dd></div>
+      <div><dt>Industries</dt><dd>Coal mining · Banking · IT services</dd></div>
+      <div><dt>Education</dt><dd>Bachelor of Computer Science (S.Kom), Informatics Engineering, Jenderal Soedirman University</dd></div>
+      <div><dt>Languages</dt><dd>Indonesian (native) · English (professional working proficiency)</dd></div>
     </dl>
   </div>
 </section>
@@ -262,15 +283,15 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="wrap">
     <div class="head rv">
       <p class="eyebrow">How I deliver</p>
-      <h2>Five stages, one owner.</h2>
-      <p>The same sequence runs through every project I lead, whether it is software, IoT hardware or a physical command centre.</p>
+      <h2>From business problem to daily use.</h2>
+      <p>The same sequence runs through every project I lead, whether it is an enterprise system, IoT hardware or a physical command centre.</p>
     </div>
     <div class="process rv">
-      <div class="step"><span class="mono">STAGE 1</span><h3>Discover</h3><p>Structured workshops with each department to map how the work really happens today.</p></div>
-      <div class="step"><span class="mono">STAGE 2</span><h3>Define</h3><p>BRD, functional specs and UI wireframes that business and IT both sign off.</p></div>
-      <div class="step"><span class="mono">STAGE 3</span><h3>Build</h3><p>Scope, timeline and quality control with developers, vendors and contractors.</p></div>
-      <div class="step"><span class="mono">STAGE 4</span><h3>Test</h3><p>SIT and UAT coordination so defects are found before users find them.</p></div>
-      <div class="step"><span class="mono">STAGE 5</span><h3>Adopt</h3><p>Training, adoption monitoring and post go-live support until usage is complete.</p></div>
+      <div class="step"><span class="mono">STAGE 1</span><h3>Discover</h3><p>Requirements workshops with each department to map how the work really happens today.</p></div>
+      <div class="step"><span class="mono">STAGE 2</span><h3>Define</h3><p>BRD, functional specs, UI wireframes, and the business case and vendor evaluation where needed.</p></div>
+      <div class="step"><span class="mono">STAGE 3</span><h3>Build</h3><p>Procurement, budget control and vendor coordination, with a risk register reported to directors.</p></div>
+      <div class="step"><span class="mono">STAGE 4</span><h3>Test</h3><p>SIT and UAT coordination, with changes handled through Change Request and Management of Change.</p></div>
+      <div class="step"><span class="mono">STAGE 5</span><h3>Adopt</h3><p>Training, adoption monitoring and post-go-live support until the system is used day to day.</p></div>
     </div>
   </div>
 </section>
@@ -287,42 +308,45 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
       <div class="truck" id="truck" aria-hidden="true"></div>
 
       <article class="stop rv">
-        <div class="when"><span class="tag"><i></i>CHECKPOINT 01</span><span class="years">2018 – 2019</span><span class="company">Jakarta</span></div>
+        <div class="when"><span class="tag"><i></i>CHECKPOINT 01</span><span class="years">Mar 2018 – Oct 2019</span><span class="company">Jakarta</span></div>
         <div>
           <h3>Application Developer &amp; Support</h3>
           <p class="co">PT Mitra Integrasi Informatika</p>
           <ul>
-            <li>Built web application features for the BNI46 internet banking platform on a PHP stack.</li>
-            <li>Supported SIT and UAT for several BNI partner system integrations.</li>
+            <li>Developed web application features for the BNI46 internet banking platform using PHP.</li>
+            <li>Provided functional support during SIT and UAT for several BNI partner system integrations.</li>
           </ul>
         </div>
       </article>
 
       <article class="stop rv">
-        <div class="when"><span class="tag"><i></i>CHECKPOINT 02</span><span class="years">2019 – 2022</span><span class="company">Jakarta</span></div>
+        <div class="when"><span class="tag"><i></i>CHECKPOINT 02</span><span class="years">Oct 2019 – Jul 2022</span><span class="company">Jakarta</span></div>
         <div>
           <h3>Business Intelligence Specialist &amp; IT Business Analyst</h3>
           <p class="co">PT Astragraphia Information &amp; Technology</p>
           <ul>
-            <li>Delivered MicroStrategy dashboards that gave several business units near real-time operational monitoring.</li>
-            <li>Wrote requirements and functional specifications for internal IT projects, flagging process gaps and proposing fixes that could scale.</li>
-            <li>Kept business and IT teams aligned through delivery so end users got what they actually needed.</li>
+            <li>Built 5 MicroStrategy dashboards for Marketing and Finance covering revenue tracking and corporate planning.</li>
+            <li>Analyzed requirements and wrote functional specifications for internal IT projects, identifying process gaps and proposing solutions that could scale.</li>
+            <li>Coordinated business and IT teams during delivery to keep scope aligned with what end users needed.</li>
           </ul>
         </div>
       </article>
 
       <article class="stop now rv">
-        <div class="when"><span class="tag"><i></i>CURRENT POSITION</span><span class="years">2022 – Present</span><span class="company">Jakarta HQ &amp; mine site</span></div>
+        <div class="when"><span class="tag"><i></i>CURRENT POSITION</span><span class="years">Jul 2022 – Present</span><span class="company">Jakarta HQ &amp; mine site</span></div>
         <div>
           <h3>IT Business Analyst &amp; Project Manager</h3>
-          <p class="co">PT Alamtri Minerals Indonesia <span style="color:var(--muted);font-weight:400">(formerly PT Adaro Minerals Indonesia)</span></p>
+          <p class="co">PT Alamtri Minerals Indonesia <span style="color:var(--muted);font-weight:400">(formerly PT Adaro Minerals Indonesia) · Reports directly to the Head of IT</span></p>
           <ul>
-            <li>Led 10+ enterprise system implementations across compliance, asset management and operations, each reaching full adoption within two months of go-live.</li>
-            <li>Ran 12+ requirements workshops across 6 departments and turned the output into BRDs, functional specs and UI wireframes.</li>
-            <li>Replaced Excel tracking and paper-based hauling logs with unified platforms, reaching 99%+ data accuracy and cutting manual processing time by about 60%.</li>
-            <li>Acted as the main link between 5+ business units and development teams on scope, deliverables and success criteria.</li>
-            <li>Owned change management for every rollout: training plans, adoption tracking and post go-live support.</li>
-            <li>Managed technology partners, contractors and AV specialists across procurement, QA and timelines for deployments at Jakarta HQ and the mine site.</li>
+            <li>Managed command centre and IoT projects worth IDR 10 to 20 billion combined, and coordinate an IDR 50 to 100 billion tower and fiber optic network build for the Central Kalimantan mine site.</li>
+            <li>Led 10+ enterprise system implementations for compliance, asset management and operations. The largest serves 100 to 200 users, and most target business units were using their systems within 2 months of go-live.</li>
+            <li>Planned training, adoption monitoring and post-go-live support for every rollout, so each project closed on actual usage rather than on the go-live date.</li>
+            <li>Replaced Excel trackers and paper hauling logs with integrated platforms, giving management one source of operational data instead of scattered files.</li>
+            <li>Wrote the Change Request and Management of Change templates that are now the IT department's official standard for system changes.</li>
+            <li>Ran 12+ requirements workshops with 6 departments and turned the results into BRDs, functional specifications and UI wireframes.</li>
+            <li>Led project teams drawn from several IT sections and business units, including members senior to me, and coordinated 3 to 4 vendors at a time on procurement, quality and schedules at Jakarta HQ and the mine site.</li>
+            <li>Prepared the vendor evaluation and business case for an enterprise Document Management System, comparing two vendors and cloud versus on-premise options. The project is now in procurement.</li>
+            <li>Contributed to the four-phase operations digitalization blueprint, which runs from infrastructure foundations to predictive analytics. Its early phases are now underway.</li>
           </ul>
         </div>
       </article>
@@ -338,25 +362,36 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     </div>
     <div class="projects">
       <article class="proj rv">
-        <div class="viz v1" id="v1" aria-hidden="true"><div class="panel"><span>UNIFIED</span><span>PLATFORM</span></div></div>
-        <div class="meta"><h3>Integrated Project Management System</h3></div>
-        <span class="mono yr">2024 · BA &amp; PM</span>
-        <p>Moved project tracking for 6 departments off scattered Excel files onto one platform. I led requirements through go-live, and every target department was using it within two months.</p>
-        <div class="chips"><span class="chip">Digital transformation</span><span class="chip">BRD</span><span class="chip">Change management</span></div>
+        <div class="viz v3" aria-hidden="true"><div class="scr" style="height:62px"><span style="left:12%"></span><span style="left:44%;animation-delay:.4s"></span><span style="left:76%;animation-delay:.8s"></span></div><div class="scr" style="height:62px"><span style="left:12%;animation-delay:.6s"></span><span style="left:44%;animation-delay:.2s"></span><span style="left:76%;animation-delay:1s"></span></div><div class="scr" style="height:62px"><span style="left:12%;animation-delay:.9s"></span><span style="left:44%;animation-delay:.5s"></span><span style="left:76%;animation-delay:.1s"></span></div><div class="scr wide"></div></div>
+        <div class="meta"><h3>Command Centre Development, 3 projects</h3></div>
+        <span class="mono yr">2024 – 2026 · PM · IDR 1–10 BN EACH</span>
+        <p>Project manager for command centre builds at Jakarta HQ and the Technology Research Center (TRC), covering design, procurement, construction and system integration. Managed vendors, budget, risk register and Board of Directors reporting.</p>
+        <div class="chips"><span class="chip">Multi-site delivery</span><span class="chip">Budget &amp; risk</span><span class="chip">Board reporting</span></div>
+      </article>
+      <article class="proj rv">
+        <div class="viz v4" aria-hidden="true">
+          <svg viewBox="0 0 300 120" preserveAspectRatio="none"><path class="fo" d="M20 92 L95 60 L170 82 L245 40 L285 58"/><path class="fo-pulse" d="M20 92 L95 60 L170 82 L245 40 L285 58"/></svg>
+          <i class="tw" style="left:calc(20/300*100%);top:60px"></i><i class="tw" style="left:calc(95/300*100%);top:28px"></i><i class="tw" style="left:calc(170/300*100%);top:50px"></i><i class="tw" style="left:calc(245/300*100%);top:8px"></i>
+          <span class="read">FO BACKBONE · SITE-WIDE</span>
+        </div>
+        <div class="meta"><h3>Tower and Fiber Optic Network, Central Kalimantan Mine Site</h3></div>
+        <span class="mono yr">2026 · ONGOING · COORDINATOR · IDR 50–100 BN</span>
+        <p>Project coordinator, working under the project manager, on a site-wide tower and fiber optic build that provides the network backbone for operational digitalization. Prepared the milestone roadmap presented to the directors and coordinate progress tracking across vendors and teams.</p>
+        <div class="chips"><span class="chip">Infrastructure</span><span class="chip">Milestone roadmap</span><span class="chip">Multi-vendor tracking</span></div>
       </article>
       <article class="proj rv">
         <div class="viz v2" aria-hidden="true"><div class="lane"></div><div class="gate" style="left:30%" data-id="GATE-A"></div><div class="gate" style="left:68%" data-id="GATE-B"></div><div class="hauler"></div><div class="read" id="rfid">TAG 0x00A1 · waiting</div></div>
         <div class="meta"><h3>RFID Hauling Tracking System</h3></div>
-        <span class="mono yr">2025 · BA &amp; PM</span>
-        <p>IoT project using RFID for real-time hauling fleet tracking. I owned the BRD and system design, coordinated hardware and software vendors, and ran SIT across the integration.</p>
+        <span class="mono yr">2025 · BA &amp; PM · IDR 5–10 BN</span>
+        <p>IoT project using RFID to track the hauling fleet in real time. Owned the BRD and system design, coordinated hardware and software vendors, and managed SIT.</p>
         <div class="chips"><span class="chip">IoT / RFID</span><span class="chip">Vendor management</span><span class="chip">SIT</span></div>
       </article>
       <article class="proj rv">
-        <div class="viz v3" aria-hidden="true"><div class="scr" style="height:62px"><span style="left:12%"></span><span style="left:44%;animation-delay:.4s"></span><span style="left:76%;animation-delay:.8s"></span></div><div class="scr" style="height:62px"><span style="left:12%;animation-delay:.6s"></span><span style="left:44%;animation-delay:.2s"></span><span style="left:76%;animation-delay:1s"></span></div><div class="scr" style="height:62px"><span style="left:12%;animation-delay:.9s"></span><span style="left:44%;animation-delay:.5s"></span><span style="left:76%;animation-delay:.1s"></span></div><div class="scr wide"></div></div>
-        <div class="meta"><h3>Three Command Centre Builds</h3></div>
-        <span class="mono yr">2024 · 2025 · 2026 · PM</span>
-        <p>PM for command centres across two locations, covering design, procurement, construction and system integration. I managed vendors, budget and the risk register, and reported to executives.</p>
-        <div class="chips"><span class="chip">Multi-site delivery</span><span class="chip">Budget &amp; risk</span><span class="chip">Executive reporting</span></div>
+        <div class="viz v1" id="v1" aria-hidden="true"><div class="panel"><span>UNIFIED</span><span>PLATFORM</span></div></div>
+        <div class="meta"><h3>Integrated Project Management System</h3></div>
+        <span class="mono yr">2024 · BA &amp; PM</span>
+        <p>Replaced Excel-based project tracking across 6 departments with one platform. Business analyst and project manager from requirements to go-live.</p>
+        <div class="chips"><span class="chip">Enterprise system</span><span class="chip">BRD</span><span class="chip">Change management</span></div>
       </article>
     </div>
   </div>
@@ -365,14 +400,18 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <section id="skills" style="padding-top:0">
   <div class="wrap">
     <div class="head rv">
-      <p class="eyebrow">Skills &amp; tools</p>
+      <p class="eyebrow">Core skills</p>
       <h2>What I bring to a project.</h2>
     </div>
     <div class="skills rv">
-      <div><h3>Business analysis</h3><ul><li>Requirements elicitation</li><li>BRD &amp; functional specs</li><li>Process gap analysis</li><li>UI wireframing</li></ul></div>
-      <div><h3>Project delivery</h3><ul><li>Project lifecycle management</li><li>Agile / Scrum</li><li>Vendor management</li><li>Budget &amp; risk register</li></ul></div>
-      <div><h3>People &amp; change</h3><ul><li>Stakeholder management</li><li>Change management</li><li>Workshop facilitation</li><li>SIT / UAT coordination</li></ul></div>
-      <div><h3>Tools</h3><ul><li>Microsoft Project · Planner · Trello</li><li>Power BI · Tableau · MicroStrategy</li><li>Figma · Notion · Canva</li><li>MS Office · NotebookLM</li></ul></div>
+      <div><h3>Digital transformation</h3><ul><li>Digitalization roadmap</li><li>Business case</li><li>Enterprise system implementation</li><li>IoT and operational technology</li><li>Change management</li><li>User adoption</li></ul></div>
+      <div><h3>Project management</h3><ul><li>Project lifecycle (Waterfall and Hybrid)</li><li>Vendor management</li><li>Procurement</li><li>Budget control</li><li>Risk register</li><li>Executive and Board reporting</li></ul></div>
+      <div><h3>Business analysis</h3><ul><li>Requirements elicitation</li><li>Business Requirements Document (BRD)</li><li>Functional specification</li><li>Process gap analysis</li><li>UI wireframing</li><li>SIT/UAT coordination</li></ul></div>
+      <div><h3>IT governance</h3><ul><li>Change Request (CR)</li><li>Management of Change (MoC)</li><li>Project governance</li><li>Stakeholder management</li><li>Workshop facilitation</li></ul></div>
+    </div>
+    <div class="tools rv">
+      <p class="list-h">Tools</p>
+      <div class="chips"><span class="chip">Microsoft Project</span><span class="chip">Microsoft Planner</span><span class="chip">Trello</span><span class="chip">Notion</span><span class="chip">Power BI</span><span class="chip">Tableau</span><span class="chip">MicroStrategy</span><span class="chip">Figma</span><span class="chip">Microsoft Office (Excel, Word, PowerPoint)</span><span class="chip">AI assistants (Claude, NotebookLM)</span></div>
     </div>
   </div>
 </section>
@@ -381,13 +420,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="wrap edu">
     <div class="rv">
       <p class="list-h">Education</p>
-      <div class="row"><div><b>Informatics Engineering</b><small>Jenderal Soedirman University</small></div><span class="mono">2013 – 2018</span></div>
+      <div class="row"><div><b>Bachelor of Computer Science (S.Kom), Informatics Engineering</b><small>Jenderal Soedirman University</small></div><span class="mono">2013 – 2018</span></div>
     </div>
     <div class="rv">
       <p class="list-h">Certifications</p>
-      <div class="row"><div><b>MicroStrategy Dashboard &amp; Reporting</b><small>MicroStrategy (official)</small></div><span class="mono">CERT</span></div>
-      <div class="row"><div><b>Business Intelligence Analyst</b><small>365 Careers, Udemy</small></div><span class="mono">COURSE</span></div>
-      <div class="row"><div><b>Tableau for Data</b><small>Jubilee Enterprise, Udemy</small></div><span class="mono">COURSE</span></div>
+      <div class="row"><div><b>MicroStrategy Dashboard &amp; Reporting</b><small>MicroStrategy</small></div><span class="mono">CERT</span></div>
+      <div class="row"><div><b>Business Intelligence Analyst</b><small>365 Careers (Udemy)</small></div><span class="mono">COURSE</span></div>
+      <div class="row"><div><b>Tableau for Data</b><small>Jubilee Enterprise (Udemy)</small></div><span class="mono">COURSE</span></div>
     </div>
   </div>
 </section>
@@ -396,7 +435,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   <div class="wrap">
     <p class="mono" style="color:var(--accent)">CONTACT</p>
     <h2>Have a transformation that needs <span>to land?</span></h2>
-    <p>I'm open to IT Business Analyst, Project Manager and digital transformation roles. Reach me directly.</p>
+    <p>I'm open to digital transformation project management and lead roles in mining, energy and industrial companies, as well as consulting and IT services. Reach me directly.</p>
     <div class="lines">
       <div><span class="mono">Email</span><span class="v" id="em">naeljonathan.career@gmail.com</span><button class="copy" data-copy="em" type="button">Copy</button></div>
       <div><span class="mono">Phone / WhatsApp</span><span class="v" id="ph">+62 822 2109 4594</span><button class="copy" data-copy="ph" type="button">Copy</button></div>
@@ -531,4 +570,5 @@ document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
 }));
 </script>
 
-</body></html>
+</body>
+</html>
